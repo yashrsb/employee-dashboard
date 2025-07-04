@@ -1,6 +1,6 @@
 # 📋 Employee Dashboard – Full Stack GraphQL App
 
-This is a full-stack POC application built with:
+This is a full-stack application built with:
 
 * 🖥️ **Frontend**: React + Apollo Client
 * 🔧 **Backend**: Node.js, Express, Apollo Server (GraphQL)

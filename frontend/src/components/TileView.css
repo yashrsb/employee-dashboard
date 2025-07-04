@@ -1,0 +1,28 @@
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.tile {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  width: 200px;
+  background-color: #fafafa;
+}
+
+.tile h3 {
+  margin: 0 0 8px;
+}
+
+.tile p {
+  margin: 4px 0;
+}
+
+.tile button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+}

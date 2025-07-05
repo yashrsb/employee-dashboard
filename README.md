@@ -26,15 +26,6 @@ employee-dashboard/
 ├── frontend/       → React client
 ├── package.json    → Root script to run both
 ```
-
----
-
-## 🛠️ Prerequisites
-
-* Node.js v18 or above
-* MongoDB Atlas (with your connection URI)
-* npm (v8+)
-
 ---
 
 ## ⚙️ Setup Instructions
@@ -42,7 +33,7 @@ employee-dashboard/
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/yashrsb/employee-dashboard
 cd employee-dashboard
 ```
 
@@ -51,8 +42,8 @@ cd employee-dashboard
 Create a `.env` file in `backend/`:
 
 ```
-MONGO_URI=your_mongo_connection_string_with_database_name
-JWT_SECRET=your_secret_key
+MONGO_URI=mongo_connection_string_with_database_name
+JWT_SECRET=random_secret_key
 ```
 
 > ✅ MongoDB should include a database called `employee` with a `User` collection.
@@ -79,28 +70,6 @@ npm run dev
 
 * Frontend: [http://localhost:3000](http://localhost:3000)
 * Backend GraphQL Playground: [http://localhost:4000/graphql](http://localhost:4000/graphql)
-
----
-
-## 🔐 Authentication Notes
-
-* Login via GraphQL Playground:
-
-```graphql
-mutation {
-  login(username: "admin", password: "admin123") {
-    token
-  }
-}
-```
-
-* Copy the token and use it in HTTP Headers for protected mutations:
-
-```json
-{
-  "authorization": "Bearer <your-token>"
-}
-```
 
 ---
 
@@ -137,4 +106,6 @@ mutation {
 
 ---
 
-## ✅ ScreenShot
+## ✅ ScreenShots
+![GraphQL - Add Employee Details](./screenshots/graphql-add-employee.png)
+![Home - Employee Dashboard](./screenshots/homepage-employee-details.png)

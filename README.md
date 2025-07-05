@@ -137,7 +137,4 @@ mutation {
 
 ---
 
-## ✅ Done!
-
-The app is now ready to use and test.
-Use the tile view on the homepage to `View`, `Edit`, or `Delete` employees.
+## ✅ ScreenShot
